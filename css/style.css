@@ -1,0 +1,11 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+#imagem-fundo {
+    width: 100vw;
+    height: 100vh;
+    background: url(../images/background-gif.gif);
+    background-size: cover;
+}
