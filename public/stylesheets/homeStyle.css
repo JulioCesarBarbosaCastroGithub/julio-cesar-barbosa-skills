@@ -7,11 +7,12 @@
 }
 
 header {
-    background-color: #C0C0C0;
+    background: linear-gradient(to right, #8b33c5, #15a0e1);
     display: flex;
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    border-bottom: solid rgba( 0, 0, 0, 0.5);
 }
 
 header img {
@@ -28,4 +29,21 @@ header h2 img {
 
 .last-school-image {
     margin-bottom: 50px;
+}
+
+body nav {
+    background: linear-gradient(to right, #8B0000, #0000CD);
+    border-bottom: solid rgba( 0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+    color: #FFFAFA;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+body div {
+    background: linear-gradient(to right, #15a0e1, #8b33c5);
+    text-align: center;
 }

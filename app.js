@@ -9,4 +9,16 @@ app.get('/', (req, res) => {
     res.render('home');
 });
 
+app.get('/sobremim', (req, res) => {
+    res.render('sobreMim');
+});
+
+app.get('/minhasskills', (req, res) => {
+    res.render('minhasSkills');
+});
+
+app.get('/contato', (req, res) => {
+    res.render('contato');
+});
+
 app.listen(3000, () => console.log('Servidor rodando na porta 3000!'));
