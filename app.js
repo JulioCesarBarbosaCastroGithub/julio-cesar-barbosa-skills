@@ -13,8 +13,8 @@ app.get('/sobremim', (req, res) => {
     res.render('sobreMim');
 });
 
-app.get('/minhasskills', (req, res) => {
-    res.render('minhasSkills');
+app.get('/myskills', (req, res) => {
+    res.render('mySkills');
 });
 
 app.get('/contato', (req, res) => {

@@ -50,6 +50,15 @@ body nav p {
 body div {
     background: linear-gradient(to right, #15a0e1, #8b33c5);
     text-align: center;
+    border-bottom: solid rgba( 0, 0, 0, 0.5);
+}
+
+body div img {
+    width: 250px;
+    height: 250px;
+    border: solid rgba( 0, 0, 0, 0.5);
+    border-radius: 150px;
+    cursor: pointer;
 }
 
 footer {
