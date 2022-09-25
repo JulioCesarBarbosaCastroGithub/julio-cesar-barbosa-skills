@@ -1,6 +1,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/stylesheets/home.css">
+    <% links.forEach(link => { %>
+        <link rel="stylesheet" href="/stylesheets/<%= link %>.css">
+    <% }) %>
     <title>Julio Cesar Barbosa - Home</title>
 </head>
