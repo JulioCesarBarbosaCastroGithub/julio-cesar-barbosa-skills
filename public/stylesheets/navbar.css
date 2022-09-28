@@ -1,0 +1,22 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap');
+
+body nav {
+    background: linear-gradient(to right, #8B0000, #0000CD);
+    border-bottom: solid rgba( 0, 0, 0, 0.5);
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+body nav p {
+    font-family: 'Montserrat', sans-serif;
+    text-decoration: none;
+    color: #FFFAFA;
+    font-weight: bold;
+    font-size: 30px;
+}
+
+body nav a {
+    text-decoration: none;
+}
