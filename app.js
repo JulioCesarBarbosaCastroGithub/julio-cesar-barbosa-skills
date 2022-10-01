@@ -2,25 +2,8 @@ const express = require('express');
 
 const app = express();
 
-const bodyParser = require('body-parser');
-
-const connection = require('./database/database');
-
-const perguntaModel = require('./database/Formulario');
-
-connection
-    .authenticate()
-    .then(() => {
-        console.log('Conexão feita com o banco de dados!');
-    })
-    .catch((msgErro) => {
-        console.log(msgErro);
-    })
-
 app.set('view engine', 'ejs');
 app.use(express.static('public'));
-app.use(bodyParser.urlencoded({extended: false}));
-app.use(bodyParser.json());
 
 app.get('/', (req, res) => {
     res.render('home');
@@ -78,7 +61,7 @@ app.get('/myskills/api', (req,res) => {
     res.render('api');
 });
 
-app.get('/myskills/react', (req,res) => {
+app.get('/myskills/reactjs', (req,res) => {
     res.render('react');
 });
 
@@ -96,14 +79,6 @@ app.get('/projetos', (req, res) => {
 
 app.get('/contato', (req, res) => {
     res.render('contato');
-});
-
-app.post('/formularioenviado', (req, res) => {
-    var nome = req.body.nome;
-    var email = req.body.email;
-    var cidade = req.body.cidade;
-    var texto = req.body.texto;
-    res.send("Informações enviadas com sucesso! Obrigado por interagir! ✌️");
 });
 
 app.listen(3000, () => console.log('Servidor rodando na porta 3000!'));
