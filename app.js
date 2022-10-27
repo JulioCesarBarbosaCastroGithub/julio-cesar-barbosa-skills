@@ -13,64 +13,68 @@ app.get('/sobremim', (req, res) => {
     res.render('sobreMim');
 });
 
-app.get('/myskills', (req, res) => {
-    res.render('mySkills');
+app.get('/skills', (req, res) => {
+    res.render('skills');
 });
 
-app.get('/myskills/web', (req,res) => {
+app.get('/skills/web', (req,res) => {
     res.render('web');
 });
 
-app.get('/myskills/terminal', (req,res) => {
+app.get('/skills/terminal', (req,res) => {
     res.render('terminal');
 });
 
-app.get('/myskills/git', (req,res) => {
+app.get('/skills/git', (req,res) => {
     res.render('git');
 });
 
-app.get('/myskills/github', (req,res) => {
+app.get('/skills/github', (req,res) => {
     res.render('github');
 });
 
-app.get('/myskills/metodologiasageis', (req,res) => {
+app.get('/skills/metodologiasageis', (req,res) => {
     res.render('metodologiasAgeis');
 });
 
-app.get('/myskills/html', (req,res) => {
+app.get('/skills/html', (req,res) => {
     res.render('html');
 });
 
-app.get('/myskills/css', (req,res) => {
+app.get('/skills/css', (req,res) => {
     res.render('css');
 });
 
-app.get('/myskills/javascript', (req,res) => {
+app.get('/skills/javascript', (req,res) => {
     res.render('javaScript');
 });
 
-app.get('/myskills/nodejs', (req,res) => {
+app.get('/skills/nodejs', (req,res) => {
     res.render('nodeJs');
 });
 
-app.get('/myskills/sqlmysql', (req,res) => {
+app.get('/skills/sqlmysql', (req,res) => {
     res.render('sqlMysql');
 });
 
-app.get('/myskills/api', (req,res) => {
+app.get('/skills/api', (req,res) => {
     res.render('api');
 });
 
-app.get('/myskills/reactjs', (req,res) => {
+app.get('/skills/reactjs', (req,res) => {
     res.render('react');
 });
 
-app.get('/myskills/angularjs', (req, res) => {
+app.get('/skills/angularjs', (req, res) => {
     res.render('angularJs');
 });
 
-app.get('/myskills/java', (req, res) => {
+app.get('/skills/java', (req, res) => {
     res.render('java');
+});
+
+app.get('/skills/typescript', (req, res) => {
+    res.render('typeScript');
 });
 
 app.get('/projetos', (req, res) => {
